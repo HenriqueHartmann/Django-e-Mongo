@@ -93,6 +93,14 @@ argon2 = ["argon2-cffi (>=16.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+category = "main"
+description = "MongoEngine support for Django Rest Framework."
+name = "django-rest-framework-mongoengine"
+optional = false
+python-versions = "*"
+version = "3.4.1"
+
+[[package]]
 category = "dev"
 description = "Discover and load entry points from installed packages."
 name = "entrypoints"
@@ -306,7 +314,7 @@ docs = ["sphinx (>=2.0.0,<3)", "sphinx-argparse (>=0.2.5,<1)", "sphinx-rtd-theme
 testing = ["pytest (>=4.0.0,<6)", "coverage (>=4.5.1,<6)", "pytest-mock (>=2.0.0,<3)", "pytest-env (>=0.6.2,<1)", "pytest-timeout (>=1.3.4,<2)", "packaging (>=20.0)", "xonsh (>=0.9.13,<1)"]
 
 [metadata]
-content-hash = "947f7a21b93e2aafeb1bba6ba4ab8691e219435ca38c22816e6af4c543581ef9"
+content-hash = "f746e33199ceaa74c847d87554d41f15c4ccc5933bce164ca746170a3b8090b2"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -340,6 +348,9 @@ distlib = [
 django = [
     {file = "Django-3.0.4-py3-none-any.whl", hash = "sha256:89e451bfbb815280b137e33e454ddd56481fdaa6334054e6e031041ee1eda360"},
     {file = "Django-3.0.4.tar.gz", hash = "sha256:50b781f6cbeb98f673aa76ed8e572a019a45e52bdd4ad09001072dfd91ab07c8"},
+]
+django-rest-framework-mongoengine = [
+    {file = "django-rest-framework-mongoengine-3.4.1.tar.gz", hash = "sha256:cabb60f2b8ecf6ceaa13550b47dde0b8f2fe9b6f7b69be681e059cf31b51d729"},
 ]
 entrypoints = [
     {file = "entrypoints-0.3-py2.py3-none-any.whl", hash = "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19"},
