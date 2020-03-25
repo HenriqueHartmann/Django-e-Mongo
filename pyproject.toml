@@ -7,6 +7,7 @@ authors = ["Henrique Luiz Hartmann"]
 [tool.poetry.dependencies]
 python = "^3.8"
 django = "^3.0.4"
+mongoengine = "^0.19.1"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
