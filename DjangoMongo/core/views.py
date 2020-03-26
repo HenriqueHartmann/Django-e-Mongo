@@ -14,5 +14,5 @@ class TaskViewSet(viewsets.ModelViewSet):
     serializer_class = TaskSerializer
 
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 router.register("tasks", TaskViewSet)
