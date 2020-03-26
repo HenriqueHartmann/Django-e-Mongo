@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+from mongoengine import connect
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework_mongoengine",
     "DjangoMongo.core",
 ]
 
@@ -74,8 +77,14 @@ WSGI_APPLICATION = "DjangoMongo.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": os.path.join(BASE_DIR, "db.sqlite3")}}
+DATABASES = {
+    "default": {"ENGINE": ""},
+}
 
+# MONGO_USER = 'root'
+# MONGO_PASS = 'admin'
+MONGO_NAME = "project"
+connect(MONGO_NAME)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
