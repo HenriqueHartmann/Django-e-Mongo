@@ -1,5 +1,5 @@
 import pytest
-from rest_framework_mongoengine.test import APIClient
+from rest_framework.test import APIClient
 
 
 @pytest.fixture()
