@@ -10,6 +10,7 @@ django = "^3.0.4"
 mongoengine = "^0.19.1"
 django-rest-framework-mongoengine = "^3.4.1"
 djangorestframework = "^3.11.0"
+drf-yasg = "^1.17.1"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

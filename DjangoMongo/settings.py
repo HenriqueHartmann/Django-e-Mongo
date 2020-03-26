@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework_mongoengine",
     "rest_framework",
+    "drf_yasg",
     "DjangoMongo.core",
 ]
 
