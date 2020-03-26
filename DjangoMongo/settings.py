@@ -79,12 +79,8 @@ WSGI_APPLICATION = "DjangoMongo.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    "default": {"ENGINE": ""},
-}
+DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": os.path.join(BASE_DIR, "db.sqlite3")}}
 
-# MONGO_USER = 'root'
-# MONGO_PASS = 'admin'
 MONGO_NAME = "todo_db_1"
 connect(MONGO_NAME, host="172.17.0.2", port=27017)
 
